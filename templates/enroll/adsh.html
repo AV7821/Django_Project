@@ -1,0 +1,11 @@
+{% extends 'enroll/base.html' %} {% block content %}
+<div class="row">
+  <div class="col-sm-12">
+    <h4 class="alert alert-info text-center fs-6">ADD NEW STUDENT</h4>
+    <form action="" method="post">
+      {% csrf_token %} {{fm.as_p}}
+      <input type="Submit" class="btn btn-success" value="ADD" />
+    </form>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends 'enroll/base.html' %} {% block content %}
+<div class="row">
+  <div class="col-sm-8 offset-2">
+    <h4 class="alert alert-info text-center">Update student information</h4>
+    {{ user.username }} {{ user.email }} {{ user.first_name }} {{ user.last_name
+    }}
+  </div>
+</div>
+{% endblock content %}
